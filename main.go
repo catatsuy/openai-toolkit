@@ -50,6 +50,7 @@ func generateJSONL(fileContent string) (string, error) {
 	data := JSONLData{
 		Messages: []Message{
 			{Role: "user", Content: fileContent},
+			{Role: "assistant", Content: "The provided repository content follows the expected format and will be used for analysis and improvement."},
 		},
 	}
 
